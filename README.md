@@ -1,2 +1,34 @@
-# static-link
-StaticLink lets you bundle links, notes, and files, then share them instantly with a QR code or small file. 100% offline, no logins, no ads. Open source and built for simplicity – because not everything needs a cloud. Perfect for quick sharing that just works.
+🚀 StaticLink
+
+Bundle links, notes & files — share instantly with no fuss, no cloud, no accounts. Offline-first, privacy-focused, and open source.
+
+
+---
+
+✨ Features
+
+📦 Bundle anything: links, notes, pics
+
+📶 Share instantly via QR code or small file
+
+🔒 Fully offline, no logins, no ads
+
+🎨 Simple, clean, and beautiful UI
+
+🤝 Open source and welcoming contributions
+
+---
+
+🤝 Contributing
+
+Got ideas or fixes? Pull requests and issues are welcome!
+Let’s keep it simple, powerful, and fun.
+
+
+---
+
+📄 License
+
+MIT License — see the LICENSE file for details.
+
+---
