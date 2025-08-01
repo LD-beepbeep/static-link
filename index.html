@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StaticLink</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9fafb;
+      color: #111;
+    }
+    .accent {
+      color: #3A86FF;
+    }
+    .blob {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle at 30% 30%, rgba(58,134,255,0.2), transparent 70%);
+      top: -100px;
+      left: -100px;
+      animation: float 10s ease-in-out infinite;
+      z-index: 0;
+    }
+    @keyframes float {
+      0%, 100% { transform: translate(0,0);}
+      50% { transform: translate(30px,20px);}
+    }
+  </style>
+</head>
+<body>
+
+<div class="blob"></div>
+
+<section class="relative flex flex-col items-center justify-center text-center px-6 pt-24 pb-32">
+  <h1 class="text-5xl md:text-7xl font-extrabold" data-aos="fade-up">
+    Static<span class="accent">Link</span>
+  </h1>
+  <p class="mt-6 max-w-xl text-lg md:text-xl text-gray-600" data-aos="fade-up" data-aos-delay="150">
+    Throw links, notes, pics — anything — into a bundle.  
+    Share it instantly with a QR code.  
+    Offline. No logins. No ads.
+  </p>
+  <div class="mt-8 flex gap-4" data-aos="fade-up" data-aos-delay="300">
+    <a href="#download" class="px-6 py-3 rounded-full font-semibold text-white bg-[#3A86FF] shadow-lg hover:scale-105 transition">
+      Download
+    </a>
+    <a href="#features" class="px-6 py-3 rounded-full font-semibold border border-gray-300 hover:bg-gray-100 transition">
+      Learn More
+    </a>
+  </div>
+</section>
+
+<section id="features" class="max-w-5xl mx-auto px-6 mb-24">
+  <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
+    Why Static<span class="accent">Link</span>?
+  </h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="bg-white rounded-2xl shadow p-6" data-aos="fade-up">
+      <div class="text-4xl mb-4">📦</div>
+      <h3 class="text-xl font-semibold mb-2">Bundle Anything</h3>
+      <p class="text-gray-600">Links, notes, pics — all in one simple bundle.</p>
+    </div>
+    <div class="bg-white rounded-2xl shadow p-6" data-aos="fade-up" data-aos-delay="150">
+      <div class="text-4xl mb-4">📶</div>
+      <h3 class="text-xl font-semibold mb-2">Offline First</h3>
+      <p class="text-gray-600">No cloud, no account, no ads. Just local.</p>
+    </div>
+    <div class="bg-white rounded-2xl shadow p-6" data-aos="fade-up" data-aos-delay="300">
+      <div class="text-4xl mb-4">⚡</div>
+      <h3 class="text-xl font-semibold mb-2">Instant QR</h3>
+      <p class="text-gray-600">Share a QR or file. Done in seconds.</p>
+    </div>
+  </div>
+</section>
+
+<section class="max-w-4xl mx-auto px-6 mb-24 text-center">
+  <h2 class="text-3xl font-bold mb-8" data-aos="fade-up">
+    How it works
+  </h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-600" data-aos="fade-up" data-aos-delay="150">
+    <div>
+      <div class="text-5xl mb-2">1</div>
+      <p>Pick links, notes, or files</p>
+    </div>
+    <div>
+      <div class="text-5xl mb-2">2</div>
+      <p>Generate a QR / file</p>
+    </div>
+    <div>
+      <div class="text-5xl mb-2">3</div>
+      <p>Your friend opens it — and that’s it.</p>
+    </div>
+  </div>
+</section>
+
+<section id="download" class="text-center py-24 px-6">
+  <h2 class="text-4xl font-extrabold mb-6" data-aos="fade-up">
+    Ready to Try Static<span class="accent">Link</span>?
+  </h2>
+  <p class="text-gray-600 mb-8" data-aos="fade-up" data-aos-delay="150">
+    Coming soon as an open-source APK.
+  </p>
+  <a href="#" class="px-8 py-4 rounded-full text-white font-semibold bg-[#3A86FF] shadow-lg hover:scale-105 transition" data-aos="fade-up" data-aos-delay="300">
+    Get Notified
+  </a>
+</section>
+
+<footer class="text-center text-gray-400 py-10">
+  © 2025 StaticLink — Open source. Offline forever.
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
+
+</body>
+</html>
