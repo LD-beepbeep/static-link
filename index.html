@@ -30,6 +30,30 @@
       0%, 100% { transform: translate(0,0);}
       50% { transform: translate(30px,20px);}
     }
+     body {
+      font-family: 'Inter', sans-serif;
+      background: #f9fafb;
+      color: #111;
+    }
+    .accent {
+      color: #3A86FF;
+    }
+    .blob {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle at 30% 30%, rgba(58,134,255,0.2), transparent 70%);
+      top: -100px;
+      left: -100px;
+      animation: float 10s ease-in-out infinite;
+      z-index: 0;
+    }
+    @keyframes float {
+      0%, 100% { transform: translate(0,0);}
+      50% { transform: translate(30px,20px);}
+    }
+    /* Dropdown override */
+    .hidden { display:none; }
   </style>
 </head>
 <body>
@@ -50,10 +74,10 @@
   </p>
   <div class="mt-8 flex gap-4" data-aos="fade-up" data-aos-delay="300">
     <a href="#download" class="px-6 py-3 rounded-full font-semibold text-white bg-[#3A86FF] shadow-lg hover:scale-105 transition">
-      Download Soon
+      Download
     </a>
     <a href="https://ld-beepbeep.github.io/Static-Link-Web/" class="px-6 py-3 rounded-full font-semibold border border-gray-300 hover:bg-gray-100 transition">
-      Use Already On Web!
+      Use On Web!
     </a>
   </div>
 </section>
@@ -156,11 +180,41 @@
     Ready to Try Static<span class="accent">Link</span>?
   </h2>
   <p class="text-gray-600 mb-8" data-aos="fade-up" data-aos-delay="150">
-    Coming soon as an open-source APK.
+    Coming soon as an open-source APK and EXE!
   </p>
-  <a href="https://ld-beepbeep.github.io/Static-Links/" class="px-8 py-4 rounded-full text-white font-semibold bg-[#3A86FF] shadow-lg hover:scale-105 transition" data-aos="fade-up" data-aos-delay="300">
-    Watch On Github
+  <a href="https://ld-beepbeep.github.io/Static-Link-Web/" class="px-8 py-4 rounded-full text-white font-semibold bg-[#3A86FF] shadow-lg hover:scale-105 transition" data-aos="fade-up" data-aos-delay="300">
+    Try Now!
   </a>
+</section>
+<!-- Cards -->
+<section class="max-w-6xl mx-auto px-6 grid gap-8 md:grid-cols-3 pb-16">
+  <!-- Promo Card -->
+  <div class="bg-white rounded-2xl shadow p-6 flex flex-col" data-aos="fade-up">
+    <h3 class="text-xl font-bold mb-2">Windows Program</h3>
+    <p class="flex-grow text-gray-600">The .exe file and the Github Repository for Static Link</p>
+    <div class="mt-4 flex gap-2">
+      <a href="https://ld-beepbeep.github.io/static-link/" class="px-4 py-2 rounded-full font-semibold text-white bg-[#3A86FF] shadow hover:scale-105 transition">Download</a>
+      <a href="https://github.com/LD-beepbeep/static-link/tree/main" class="px-4 py-2 rounded-full font-semibold border border-gray-300 hover:bg-gray-100 transition">GitHub</a>
+    </div>
+  </div>
+  <!-- Web App Card -->
+  <div class="bg-white rounded-2xl shadow p-6 flex flex-col" data-aos="fade-up" data-aos-delay="150">
+    <h3 class="text-xl font-bold mb-2">Web App</h3>
+    <p class="flex-grow text-gray-600">Use StaticLink directly in your browser.</p>
+    <div class="mt-4 flex gap-2">
+      <a href="https://ld-beepbeep.github.io/Static-Link-Web/" class="px-4 py-2 rounded-full font-semibold text-white bg-[#3A86FF] shadow hover:scale-105 transition">Open</a>
+      <a href="https://github.com/LD-beepbeep/Static-Link-Web" class="px-4 py-2 rounded-full font-semibold border border-gray-300 hover:bg-gray-100 transition">GitHub</a>
+    </div>
+  </div>
+  <!-- Android APK Card -->
+  <div class="bg-white rounded-2xl shadow p-6 flex flex-col" data-aos="fade-up" data-aos-delay="300">
+    <h3 class="text-xl font-bold mb-2">Android APK</h3>
+    <p class="flex-grow text-gray-600">Download the open-source Android app!</p>
+    <div class="mt-4 flex gap-2">
+      <a href="https://github.com/LD-beepbeep/Static-Link-APK/releases" class="px-4 py-2 rounded-full font-semibold text-white bg-[#3A86FF] shadow hover:scale-105 transition">Download</a>
+      <a href="https://github.com/LD-beepbeep/Static-Link-APK" class="px-4 py-2 rounded-full font-semibold border border-gray-300 hover:bg-gray-100 transition">GitHub</a>
+    </div>
+  </div>
 </section>
 
 <footer class="text-center text-gray-400 py-10">
